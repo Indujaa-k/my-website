@@ -1,0 +1,99 @@
+@keyframes colorChange {
+  0% {
+    background-color: #F2FCE2; /* Initial color */
+  }
+  40% {
+    background-color: #EFF0FC; /* Light Blue */
+  }
+  60% {
+    background-color: #FCEDF6; /* Light Pink */
+  }
+  80% {
+    background-color: #FCF2ED; /* Light Purple */
+  }
+  100% {
+    background-color: #EAFBFC; /* Light Green */
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: translateX(-5px) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(3deg);
+  }
+  100% {
+    transform: translateX(-5px) rotate(-3deg);
+  }
+}
+
+.name {
+  animation: colorChange 24s infinite, slideInUp 1s ease-out forwards;
+  padding-left: 20%;
+  font-size: 80px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 70vh;
+  padding-bottom: 10%;
+  z-index: 8;
+}
+
+/* Icons */
+.name-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  
+  .icon {
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: #484848; /* Change color on hover */
+      transform: scale(1.2);
+    }
+
+    /* Apply the dance animation */
+    animation: dance 2s ease-in-out infinite;
+  }
+  .html {
+    color: #e34c26;  /* HTML color */
+  }
+  
+  .css {
+    color: #1572b6;  /* CSS color */
+  }
+  
+  .sass {
+    color: #cd6799;  /* Sass color */
+  }
+  
+  .js {
+    color: #d2ba05;  /* JavaScript color */
+  }
+  
+  .react {
+    color: #61dafb;  /* React color */
+  }
+  
+}
+
+/* Introduction Section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 7% 20%;
+  font-size: 25px;
+  color: #333;
+  line-height: 45px;
+  margin-bottom: 60px;
+  animation: slideInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Delayed for staggered effect */
+}  

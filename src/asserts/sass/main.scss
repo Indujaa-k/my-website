@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import './variable';
+@import './mixin';
+@import './header';
+@import './_name.scss';
+@import './work';
+@import './about';
+@import './experience';
+@import './skills';
+@import './contact';
+@import './dtmedia';
+@import './mdmedia';
+@import './smmedia';
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
